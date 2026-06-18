@@ -28,12 +28,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Terragrunt root config uses `terraform_binary = "tofu"` and state keys are derived from directory path — no manual key management
   4. CT landing zone is deployed in us-east-1 with Log Archive and Audit accounts created and baselined (verified in CT console)
   5. AWS Organizations shows nested OU structure: Root → chain-vote-ai → {dev, staging, prod}; Root → chain-vote-voting → {dev, staging, prod}
-**Plans**: TBD
+**Plans**: Defined
 
 Plans:
-- [ ] 01-01: Pre-flight script + state bootstrap (FOUND-01, FOUND-04, STATE-01, STATE-02)
-- [ ] 01-02: CT landing zone runbook + IaC wrapper (FOUND-02)
-- [ ] 01-03: Nested OU structure via OpenTofu + Terragrunt (FOUND-03)
+- [ ] 01-01: Pre-flight script + state bootstrap (FOUND-01, FOUND-04, STATE-01, STATE-02) — `.planning/phases/01-foundation/01-01-PLAN.md`
+- [ ] 01-02: CT landing zone runbook + IaC wrapper (FOUND-02) — `.planning/phases/01-foundation/01-02-PLAN.md`
+- [ ] 01-03: Nested OU structure via OpenTofu + Terragrunt (FOUND-03) — `.planning/phases/01-foundation/01-03-PLAN.md`
 
 ### Phase 2: AFT Bootstrap
 **Goal**: AFT is deployed into the management account via Terragrunt + OpenTofu, wired to all four GitHub repos, and the CodePipeline executes successfully on a test commit
