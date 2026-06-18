@@ -47,3 +47,9 @@ terraform.rc
 .dolt/
 *.db
 .beads-credential-key
+
+# Terragrunt-generated files
+**/.terragrunt-cache/
+**/backend.tf
+**/provider.tf
+**/versions.tf

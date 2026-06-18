@@ -1,0 +1,7 @@
+# Copy to terraform.tfvars and fill in values after CT console setup.
+# These values come from the account ID capture step in docs/runbooks/01-ct-landing-zone.md Section 6.
+#
+# terraform.tfvars is .gitignored — do not commit it.
+management_account_id  = "REPLACE_WITH_MGMT_ACCOUNT_ID"
+log_archive_account_id = "REPLACE_WITH_LOG_ARCHIVE_ACCOUNT_ID"
+audit_account_id       = "REPLACE_WITH_AUDIT_ACCOUNT_ID"
