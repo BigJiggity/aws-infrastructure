@@ -3,9 +3,9 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Phase 1 plans defined — ready to execute
+stopped_at: Phase 1 code complete — awaiting human CT console steps
 last_updated: "2026-06-18T00:00:00.000Z"
-last_activity: 2026-06-18 — Phase 1 plans written and verified
+last_activity: 2026-06-18 — Phase 1 all plans executed
 progress:
   total_phases: 3
   completed_phases: 0
@@ -27,8 +27,8 @@ See: .planning/PROJECT.md (updated 2026-06-16)
 
 Phase: 1 of 3 (Foundation)
 Plan: 0 of 3 in current phase
-Status: Plans defined — ready to execute 01-01
-Last activity: 2026-06-18 — Phase 1 plans written and verified
+Status: Code complete — operator must run CT console steps (see runbooks)
+Last activity: 2026-06-18 — Phase 1 all plans executed
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -86,4 +86,4 @@ None yet.
 
 Last session: 2026-06-18T04:19:45.479Z
 Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-foundation/01-01-PLAN.md
+Resume file: docs/runbooks/01-ct-landing-zone.md (human step — deploy CT via console)

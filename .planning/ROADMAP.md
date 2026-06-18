@@ -31,9 +31,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: Defined
 
 Plans:
-- [ ] 01-01: Pre-flight script + state bootstrap (FOUND-01, FOUND-04, STATE-01, STATE-02) — `.planning/phases/01-foundation/01-01-PLAN.md`
-- [ ] 01-02: CT landing zone runbook + IaC wrapper (FOUND-02) — `.planning/phases/01-foundation/01-02-PLAN.md`
-- [ ] 01-03: Nested OU structure via OpenTofu + Terragrunt (FOUND-03) — `.planning/phases/01-foundation/01-03-PLAN.md`
+- [x] 01-01: Pre-flight script + state bootstrap (FOUND-01, FOUND-04, STATE-01, STATE-02)
+- [x] 01-02: CT landing zone runbook + IaC wrapper (FOUND-02) — ⚠️ Human checkpoint: follow `docs/runbooks/01-ct-landing-zone.md`
+- [x] 01-03: Nested OU structure via OpenTofu + Terragrunt (FOUND-03) — ⚠️ Human checkpoint: `terragrunt apply` + follow `docs/runbooks/02-ou-ct-registration.md`
 
 ### Phase 2: AFT Bootstrap
 **Goal**: AFT is deployed into the management account via Terragrunt + OpenTofu, wired to all four GitHub repos, and the CodePipeline executes successfully on a test commit
@@ -73,6 +73,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/3 | Not started | - |
+| 1. Foundation | 3/3 | Code complete — awaiting human CT steps | 2026-06-18 |
 | 2. AFT Bootstrap | 0/2 | Not started | - |
 | 3. Account Vending | 0/2 | Not started | - |
